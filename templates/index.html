@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recent News Articles</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+h1 {
+font-size: 24px;
+margin-top: 0;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li a {
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #333;
+}
+li a:hover {
+background-color: #eee;
+}
+</style>
+</head>
+<body>
+<h1>Recent News Articles</h1>
+<ul>
+{% for article in articles %}
+<li><a href="/article/{{ article.id }}">{{ article.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
