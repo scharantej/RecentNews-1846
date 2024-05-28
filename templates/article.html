@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ article.title }}</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+h1 {
+font-size: 24px;
+margin-top: 0;
+}
+p {
+font-size: 16px;
+margin-top: 0;
+}
+.author {
+font-size: 12px;
+margin-top: 10px;
+}
+.date {
+font-size: 12px;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<h1>{{ article.title }}</h1>
+<p>{{ article.content }}</p>
+<div class="author">Author: {{ article.author }}</div>
+<div class="date">Date: {{ article.date }}</div>
+</body>
+</html>
+
